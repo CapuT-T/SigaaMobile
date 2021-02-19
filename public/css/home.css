@@ -1,0 +1,145 @@
+/* Header */
+header{
+    padding: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--color-fff--);
+    background: var(--color-4B5D97--);
+    border-bottom: 2px solid var(--color-FF9C07--);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+:is(header, footer) h1{
+    font-size: 1.8rem;
+    color: var(--color-fff--);
+}
+
+.bar i{
+    font-size: 3rem;
+}
+
+header a{
+    color: var(--color-fff--);
+    font-size: 1.6rem;
+}
+
+[data-menu-dropdown] nav{
+    min-width: 250px;
+    height: 100%;
+    background: var(--color-DCE4F2--);
+    display: none; 
+    position: absolute;
+    top: 0;
+}
+
+[data-menu-dropdown] .sair{
+    background: var(--color-4B5D97-80--);
+    border-bottom: 2px solid var(--color-FF9C07--);
+}
+
+[data-menu-dropdown] .sair i{
+    margin: 5px 15px;
+    font-size: 3rem;
+    color: var(--color-fff--);
+}
+
+[data-menu-dropdown] nav a{
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 10px 15px; 
+    text-decoration: none;
+    color: var(--color-0c--);
+    display: inline-block;
+}
+
+[data-menu-dropdown] nav li:nth-child(2n+0){
+    background: var(--color-AAC5EF--);
+}
+
+/* user */
+.area-user{
+    margin: 20px 0;
+}
+
+.area-user > .container{
+    display: flex;
+}
+
+.area-user .img-user{
+    min-width: 120px;
+    min-height: 120px;
+    box-shadow:  0 4px 4px rgba(0, 0, 0, 0.25);
+    background: #ccc;
+}
+
+.area-user .info-user{
+    padding: 8px; 
+}
+
+.area-user .info-user p{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+/* Atividades */
+.container-atividades h1{
+    padding: 10px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border-top: 2px solid var(--color-FF9C07--);
+    border-bottom: 2px solid var(--color-FF9C07--);
+}
+
+.container-atividades p{
+    padding: 10px 8px;
+    font-size: 1.6rem;
+    color: var(--color-fff--);
+    font-weight: 400;
+    letter-spacing: .8px;
+    background: var(--color-4B5D97--);
+}
+
+[data-atividades="componentes-curriculares"] h1{
+    text-align: center;
+}
+
+[data-atividades="componentes-curriculares"] li a{
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 1.7rem;
+    color: var(--color-000--);
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+
+[data-atividades="componentes-curriculares"] li.ativo a::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #4b4b4b;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    display: inline-block;
+}
+
+[data-atividades="componentes-curriculares"] li{
+    background: var(--color-AAC5EF--);
+}
+
+
+[data-atividades="componentes-curriculares"] li:nth-child(2n+0){
+    background: var(--color-DCE4F2--);
+}
+
+/* footer */
+footer h1{
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid var(--color-FF9C07--);
+    background: var(--color-4B5D97--);
+}
