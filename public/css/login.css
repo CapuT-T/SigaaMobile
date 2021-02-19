@@ -8,7 +8,7 @@ footer{
 }
 
 :is(header, footer) h1{
-    padding: 25px 0;
+    padding: 20px 0;
     font-weight: 400;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
